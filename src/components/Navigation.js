@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled, { consolidateStreamedStyles } from 'styled-components';
+import styled from 'styled-components';
 
 import {Item} from './Item';
 
@@ -33,7 +33,7 @@ export class Navigation extends React.Component {
         })
         this.items.forEach((item,index) => {
             if(index != data.props.itemId){
-                item.active = 'not'
+                item.active = 'NOT'
             }
         })
         this.items[data.props.itemId].active = 'YES';

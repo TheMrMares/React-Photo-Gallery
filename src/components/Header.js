@@ -10,13 +10,17 @@ const Wrapper = styled.header`
 const Banner = styled.div`
     width: 100%;
     float: left;
-    height: 100vh;`;
+    height: 100vh;
+`;
 const BannerImage = styled.img`
     width: 100%;
-    float: left;`;
+    float: left;
+`;
 const StyledNavigation = styled(Navigation)`
     position: fixed;
-    top: 0;`;
+    z-index: 2000;
+    top: 0;
+`;
 
 export class Header extends React.Component {
     render(){
