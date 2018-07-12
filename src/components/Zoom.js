@@ -6,6 +6,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     z-index: 1000;
+    top: 0;
 `;
 const RelativeWrapper = styled.div`
     width: 100%;
@@ -27,6 +28,8 @@ const ZoomImg = styled.img`
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1200;
+    max-width: 80%;
+    max-height: 80%;
 `;
 
 export class Zoom extends React.Component {
@@ -39,7 +42,7 @@ export class Zoom extends React.Component {
                 <RelativeWrapper>
                     <ZoomImg src={this.props.imagePath}></ZoomImg>
                 </RelativeWrapper>
-                <ZoomClose/>
+                <ZoomClose onClick={this.props.clickClose}/>
             </Wrapper>
         );
     }
