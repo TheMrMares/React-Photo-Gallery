@@ -20,7 +20,7 @@ const ZoomClose = styled.div`
     width: 100%;
     height: 100%
     z-index: 1100;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
 `;
 const ZoomImg = styled.img`
     position: absolute;
@@ -30,6 +30,7 @@ const ZoomImg = styled.img`
     z-index: 1200;
     max-width: 80%;
     max-height: 80%;
+    border: 12px solid rgba(255,255,255,1);
 `;
 
 export class Zoom extends React.Component {

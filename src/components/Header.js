@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import bannerUrl from './../images/battlefield4-report1.1.png';
+import bannerUrl from './../images/header-background.jpg';
 import {Navigation} from './Navigation';
 
 const Wrapper = styled.header`
@@ -18,7 +18,7 @@ const BannerImage = styled.img`
 `;
 const StyledNavigation = styled(Navigation)`
     position: fixed;
-    z-index: 2000;
+    z-index: 300;
     top: 0;
 `;
 

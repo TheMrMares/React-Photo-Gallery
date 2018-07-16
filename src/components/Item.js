@@ -2,14 +2,17 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.li`
-    background: red;
+    
 `;
 const ItemLink = styled.a`
-    padding: 5px 60px;
+    padding: 10px 60px;
     float: left;
-    background: orange;
-    color: black;
-    &:hover { background: black; color: white; }`;
+    color: white;
+    font-weight: bolder;
+    transition: 0.25s ease;
+    &:hover { 
+        background: rgba(0,0,0,0.2); 
+    }`;
 
 export class Item extends React.Component {
     constructor(){

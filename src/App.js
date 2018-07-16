@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import logo from './logo.svg';
 import './App.css';
 
 import {Header} from './components/Header';
@@ -13,6 +12,7 @@ const StyledMain = styled(Main)``
 const StyledFooter = styled(Footer)``
 
 const cssPagePart = `
+  font-family: Arial;
   float: left;
   width: 100%;`;
 

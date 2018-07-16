@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import {Item} from './Item';
 
 const Wrapper = styled.nav`
-    background: red;
+    margin: 10px;
+    background: rgba(0,0,0,0.5);
 `;
 const List = styled.ul`
     margin: 0;

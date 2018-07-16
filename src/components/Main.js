@@ -9,9 +9,11 @@ import g_img2 from './../gallery/2.jpg';
 import g_img3 from './../gallery/3.jpg';
 let images = [];
 images.push(g_img1, g_img2, g_img3);
+images.push(g_img1, g_img2, g_img3);
+images.push(g_img1, g_img2, g_img3);
 
 const Wrapper = styled.section`
-    background: green;
+    background: rgba(20,20,20,1);
 `;
 const TilesContainer = styled.div`
     float: left;
@@ -19,6 +21,7 @@ const TilesContainer = styled.div`
     margin: 20px 10% 20px 10%;
     background: #eee;
     min-height: 100vh;
+    text-align: center;
 `;
 const StyledTile = styled(Tile)`
     max-width: 20%;
